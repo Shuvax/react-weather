@@ -37,7 +37,7 @@ function Weather() {
     const getWeather = (city, country) => {
         axios({
             method: "GET",
-            url: `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=93d64353ca23a1e6ed6abb95e58c335c`
+            url: `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=93d64353ca23a1e6ed6abb95e58c335c`
         })
             .then((response) => {
                 setTemperature(Math.round(response.data.main.temp))
