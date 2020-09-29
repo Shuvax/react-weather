@@ -12,7 +12,7 @@ body,html {
   align-items: center;
   margin: 0;
   overflow: auto;
-  background-image: url('/sky_bg.jpg');
+  background-image: url('sky_bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
