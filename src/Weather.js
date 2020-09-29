@@ -4,6 +4,7 @@ import moment from 'moment';
 import './Weather.css';
 
 
+
 function Weather() {
 
     const[temperature, setTemperature] = useState('');
@@ -60,12 +61,11 @@ function Weather() {
 
     return (
         <div className='main'>
-            <div className='time'>
-                <h1>{date}</h1>
-                <h1>{time}</h1>  
-            </div>
-
             <div className='section-wrapper'>
+                <div className='time'>
+                    <h1>{date}</h1>
+                    <h1>{time}</h1>  
+                </div>
                 <div className='location'>
                     <h1><p>Weather in</p> {city ? `${city.toLocaleUpperCase()},` : <strong>City,</strong>} {country ? country.toUpperCase() : <strong>Country</strong>}</h1>
                 </div>
@@ -108,12 +108,12 @@ function Weather() {
                 <div className='wind_humid_wrapper'>
                     <div className='humidity_wrapper'>
                         <h2>Humidity</h2>
-                        <p>{humidity ? `Humidity: ${humidity}%` : ''}</p>
+                        <p>{humidity ? `${humidity}%` : ''}</p>
                     </div>
 
                     <div className='wind_wrapper'>
                         <h2>Wind</h2>
-                        <p>{wind ? `Wind: ${wind.deg}° ${wind.speed}m/s` : ''}</p>
+                        <p>{wind ? `${wind.deg}° ${wind.speed}m/s` : ''}</p>
                     </div>
                 </div>      
 
@@ -128,7 +128,7 @@ function Weather() {
                     </div>
                 </div>       
             </div>   
-        </div>     
+        </div>   
     )
 }
 
