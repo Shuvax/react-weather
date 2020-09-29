@@ -1,0 +1,266 @@
+/* Main */
+
+.main {
+    color: white;
+    letter-spacing: 3px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 0 4em;
+    overflow: auto;
+}
+
+.section-wrapper {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Time */
+
+.time {
+    text-align: center;
+}
+
+.time h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+/* Location */
+
+.location {
+    text-align: center;
+    font-size: .75em;
+   
+}
+
+.location_wrapper {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#city {
+    text-transform: capitalize;
+}
+
+/* Inputs */
+
+.inputs-wrapper {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.input {
+    font-size: 20px;
+    height: 40px;
+    border: 1px solid rgb(32, 156, 206);
+    text-indent: 10px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input_city {
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.input_country {
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.input_button {
+	box-shadow: 3px 2px 0px 0px  rgb(32, 156, 206);
+    background:linear-gradient(to bottom, #79bbff 5%,  rgb(32, 156, 206) 100%);
+    border: none;
+	background-color:#79bbff;
+    border-radius:42px;
+    outline: none;
+    margin-top: 2em;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+	font-size:15px;
+	font-weight: 400;
+	padding:10px 30px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #528ecc;
+    transition: .4s ease-in;
+}
+.input_button:hover {
+	background:linear-gradient(to bottom, #378de5 5%,  rgb(32, 156, 206) 100%);
+	background-color:#378de5;
+}
+.input_button:active {
+	position:relative;
+	top:1px;
+}
+
+/* Unit Button */
+
+.unit_button {
+    font-size: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border: 1px solid rgb(32, 156, 206);
+}
+
+.unit-button:hover {
+    background-color: cadetblue;
+    color: white;
+}
+
+.c {
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    transition: .3s ease-in;
+}
+
+.c:hover {
+    background-color: rgb(32, 156, 206);
+    color: white;
+}
+
+.c:focus {
+    background-color: rgb(32, 156, 206);
+    color: white;
+}
+
+.f {
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    transition: .3s ease-in;
+}
+
+.f:hover {
+    background-color: rgb(32, 156, 206);
+    color: white;
+}
+
+.f:focus {
+    background-color: rgb(32, 156, 206);
+    color: white;
+}
+
+/* weather icon description */
+
+.curr_weather_icon {
+    text-align: center;
+}
+
+.description_wrapper {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* Temperature */
+
+.temp_wrapper {
+    text-align: center;
+}
+
+.temp {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* WIND HUMIDITY */ 
+
+.wind_humid_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/* Min Max Temp */
+
+.min_max_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Media queries */
+
+
+/*
+
+@media screen and (max-width: 1680px) {
+
+
+}
+
+@media screen and (max-width: 1280px) {
+
+  
+}
+
+@media screen and (max-width: 980px) {
+
+ 
+}
+
+*/
+
+@media screen and (max-width: 736px) {
+
+    .section-wrapper {
+        margin-top: 50px;
+    }
+    .inputs-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+   
+    }
+    .input_city {
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    
+    .input_country {
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .section-wrapper {
+        margin-top: 20px;
+    }
+    .time h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+    .wind_humid_wrapper {
+        flex-direction: column;
+    }
+    .min_max_wrapper {
+        flex-direction: column;
+    }
+}
